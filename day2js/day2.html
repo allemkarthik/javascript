@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // user input
+        var a=prompt("enter your name")
+        console.log(a)
+
+
+
+        // math operations using prompt
+
+        var a=+prompt("enter a value:");
+        var b=+prompt("enter b value:");    
+
+        console.log(a+b);
+        // alert(a+b)
+
+        console.log(a*b);
+        console.log(a-b);
+        console.log(a/b);
+
+
+        // type conversion
+
+        // implict conversion
+
+        var c=10;
+
+        var d="20";
+        console.log(a+b);     //here concatenation operation will perform
+        console.log(a-b);  //here implict conversion will takes place
+
+
+
+        // explict conversion
+
+        var e=123456;
+        var f=String(e);   //manually converting
+        console.log(f);
+
+
+        var g="1";
+        var h=Boolean(g);
+        console.log(h)
+    </script>
+</body>
+</html>
