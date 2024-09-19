@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // temperature check program using nested ternary 
+        var a=+prompt("enter temperature in your area:")
+        var b=a>=30? "temp is hot": (a>=20 && a<=30)? "temp is warm": (a>=10 && a<=19)? "temp is cool" : (a<10)?"temp is cold":""
+        console.log(b)
+    </script>
+</body>
+</html>
