@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("enter the discount")
+        switch(true){
+            case (a<50):
+                console.log("your amount is " +a + " no discount🤷‍♀️");
+                break;
+            case (a>=50 && a<=100):
+                console.log("your amount is " +a + " you got 5% discount😊");
+                break;
+            case (a>=101 && a<200):
+                console.log("your amount is " +a + " you got 10% discount🤑");
+                break;
+
+            case (a>=200):
+                console.log("your amount is " +a + " you got 15% discount🤞");
+                break;
+
+                
+        }
+    </script>
+</body>
+</html>
