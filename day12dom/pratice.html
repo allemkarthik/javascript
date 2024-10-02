@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="childs">some content</div>
+    <div class="childs">some content</div>
+    <div class="childs">some content</div>
+    <div class="childs">some content</div>
+    <div class="childs">some content</div>
+
+    <button onclick="fun()">click to change the theme</button>
+    
+
+    <script>
+        let a=document.createElement('p')
+        a.innerText="some content added"
+        
+        let b=document.querySelector(".childs")
+        b.append(a)
+
+
+        // function fun(){
+        //     let a = document.createElement('h1')
+        //     a.innerText="new element";
+        //     a.style.color="blue";
+        //     a.style.backgroundColor="green"
+        //     document.body.appendChild(a)
+
+        //     let b=document.createElement("button")
+        //     b.innerText="click"
+        //     b.style.color="black"
+        //     b.onclick=function fun2(){
+        //         a.style.display="none";
+        //         alert('sucessfully deleted')
+        //     }
+        //     a.append(b)
+        // }
+
+        var arr=["black","blue","red","green","yellow"]
+        count=0
+
+        function fun(){
+
+            document.body.style.backgroundColor=arr[count];
+            count++
+
+            if(count==arr.length-1)count=0
+        }
+
+       
+    </script>
+</body>
+</html>

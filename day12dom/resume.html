@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            padding: 0;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="name">
+
+    </div>
+    <div class="education"></div>
+
+    <div class="skills"></div>
+
+    
+    <script>
+        // name 
+        let name=document.createElement('h1')
+        name.innerText="ALLEM SAI KARTHIK";
+        name.style.textAlign="center"
+        name.style.margin="0";
+        let divclass=document.querySelector(".name")
+        // address
+        let num=document.createElement("ul");
+        let li1=document.createElement("li");
+        let li2=document.createElement("li");
+        li1.innerText="91-7036197623"
+        li2.innerText="Hyderabad,india";
+        li1.style.display="inline"
+        li2.style.marginLeft="10px"
+        li2.style.display="inline";
+        num.style.textAlign="center"
+        num.style.margin="0%"
+        num.append(li1,li2)
+        // email
+        let nemail=document.createElement('a')
+        nemail.href="mailto:allemkarthik@gmail.com";
+        nemail.innerText="Email: "+"allemkarthik@gmail.com"
+        nemail.style.fontSize="1rem"
+        // linkdin
+        let din=document.createElement("a")
+        din.href="https://www.linkedin.com/in/karthik-allem/";
+        din.innerText="linkdin: mylinkdin-account";
+        din.style.marginLeft="30%"
+        din.style.fontSize="1rem"
+        // github
+        let hub=document.createElement("a")
+        hub.href="https://github.com/allemkarthik";
+        hub.innerText="github: allemkarthik.github.com";
+        hub.style.marginLeft="30%";
+        hub.style.fontSize="1rem"
+
+        // objective
+        let obj=document.createElement("h2");
+        obj.innerText="objective";
+        obj.style.fontStyle="bold"
+        obj.style.margin="1px"
+
+        // horizontal line
+        let lined=document.createElement("hr")
+        lined.style.border="1.5px solid"
+        
+        // obj-content
+        let objcon=document.createElement("p");
+        objcon.innerText="Aspiring software developer with a foundational understanding of programming and web application design. Currently enhancing skills in coding, testing, and debugging through hands-on projects and coursework. Adept "
+        +"learning technical documentation and integration needs while actively researching competitive technologies. Eager to"
+        +"collaborate with Quality Assurance teams to ensure adherence to technical specifications"
+        objcon.style.fontSize="1rem"
+        objcon.style.margin="0"
+        // education
+
+        let edu=document.createElement("h2");
+        edu.innerText="Education";
+        edu.style.fontStyle="bold";
+        edu.style.margin='1px'
+
+        // horizontal line
+        let lined1=document.createElement("hr")
+        lined1.style.border="1.5px solid";
+
+        // edu-content
+        let educon=document.createElement('ul');
+        let educon1=document.createElement('li')
+        let educon2=document.createElement('li')
+        let educon3=document.createElement('li')
+        
+        let divclass2=document.querySelector(".education")
+
+
+        educon1.innerHTML="<b>"+"Bachelor of Technology"+"</b>";
+        educon2.innerText="Bharat Institute of engineering and technology  (CGPA:6.70)";
+        educon2.style.display="inline"
+        educon3.innerText="(2020-2024)";
+        educon3.style.display="inline";
+        educon3.style.marginLeft="60%";
+        educon1.style.fontSize="1rem";
+        educon2.style.fontSize="1rem";
+        educon3.style.fontSize="1rem";
+        educon.style.margin="0"
+        educon.append(educon1,educon2,educon3)
+        // skills
+
+        let skill=document.createElement('h2');
+        skill.innerText="skills";
+        skill.style.margin="1px"
+
+        
+
+        // horizontal line
+        let lined2=document.createElement("hr")
+        lined2.style.border="1.5px solid";
+
+        // skills-content
+        // let skillcon=document.createElement("p");
+        let skillcon0=document.createElement("ul");
+        let skillcon1=document.createElement("li");
+        let skillcon2=document.createElement("li");
+        let skillcon3=document.createElement("li");
+        let skillcon4=document.createElement("li");
+        let skillcon5=document.createElement("li");
+        let skillcon6=document.createElement("li");
+
+        let divclass3=document.querySelector(".skills")
+    
+    
+        skillcon1.innerHTML="<b>"+"FrontEnd Technologys: "+"</b>" +"HTML, CSS, JAVASCRIPT";
+        skillcon2.innerHTML="<b>"+"BackEnd TeChnologys: "+"</b>" +"PYTHON DJANGO";
+        skillcon3.innerHTML="<b>"+"FrameWorks And Libraries: "+"</b>" +"DJANGO,PANDAS,NUMPY,MATPLOTLIB,ORM";
+        skillcon4.innerHTML="<b>"+"Concurrency And Functions: "+"</b>" +"REGEX, MULTITHREADING";
+        skillcon5.innerHTML="<b>"+"Version Contorls: "+"</b>" +"GIT, GITHUB, VSCODE, JUPITER, IDLE";
+        skillcon6.innerHTML="<b>"+"Productivity Tools: "+"</b>" +"MS OFFICE,GOOGLE SHEETS, EXCEL";
+
+        skillcon0.append(skillcon1,skillcon2,skillcon3,skillcon4,skillcon5,skillcon6)
+        skillcon1.style.padding="0.5px"
+        skillcon2.style.padding="0.5px"
+        skillcon3.style.padding="0.5px"
+        skillcon4.style.padding="0.5px"
+        skillcon5.style.padding="0.5px"
+        skillcon6.style.padding="0.5px"
+
+         // projects
+
+         let project=document.createElement('h2');
+        project.innerText="Projects";
+        project.style.margin="1px"
+        // horizontal line
+        let lined3=document.createElement("hr")
+        lined3.style.border="1.5px solid";
+
+        // project content
+        let procon=document.createElement("p");
+        procon.innerHTML="<b>"+"A Django-based Vehicle Information Portal: "+"</b>"+"Engineered an interactive web application leveraging Django to"+
+        "showcase detailed specs of current and upcoming motorcycles; utilized web scraping to dynamically gather real-time"
+        +"data, providing enthusiasts with comprehensive insights at their fingertips. (Try it here)"  
+              
+        
+        let procon1=document.createElement("p")
+        procon1.innerHTML="<b>"+"Exploratory Data Analysis on Richest People: "+"</b>"+"Applied advanced statistical techniques to analyze and derive"+
+        "insights from the dataset of the top 500 richest individuals, employing Pandas and NumPy for data manipulation"+
+        "and Matplotlib for data visualization in Python 3 within the Anaconda Notebook environment.(Try it here)"
+
+        let procon2=document.createElement("p");
+        procon2.innerHTML="<b>"+"Personal portfolio: "+"</b>"+"“I ve designed and developed a personal web portfolio using HTML and CSS. The portfolio"+
+         " showcases my projects, skills, and passion for web development. It features clean design, responsive layouts, and"+
+        "attention to detail.(Try it here)"
+
+        // certification
+
+        let cer=document.createElement("h2");
+        cer.innerText="Certification";
+        cer.style.margin="1px"
+
+        // horizontal line
+        let lined4=document.createElement("hr")
+        lined4.style.border="1.5px solid";
+
+        // cer-con
+
+        let cercon=document.createElement("p");
+        cercon.innerHTML="Completed intensive Python for Data Science Course by IBM, strengthening skills in Python for data analysis"+
+" and manipulation. (Try it here)"
+
+
+        divclass.append(name,num,nemail,din,hub,obj,lined,objcon,edu,lined1)
+        divclass2.append(educon,skill,lined2)
+
+        divclass3.append(skillcon0,project,lined3,procon,procon1,procon2,cer,lined4,cercon)
+        
+
+        
+    </script>
+</body>
+</html>

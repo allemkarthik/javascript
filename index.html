@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-top: 100px;
+        }
+        a {
+            font-size: 16px; /* Adjusted font-size instead of text-size-adjust */
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto; /* Center the table horizontally */
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: brown;
+            text-align: center; /* Center the heading */
+        }
+    </style>
+</head>
+<body>
+ <h1>js tasks</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>s.no</th>
+                <th>day</th>
+                <th>task</th>
+                <th>date</th>
+                <th>time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>day12</td>
+                <td><a href="./day12dom/resume.html">resume using dom</a></td>
+                <td>1-10-2024</td>
+                <td class="currentTime"></td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+    <script>
+        function updateTime(){
+            const now=new Date();
+            const time=now.toLocaleTimeString();
+            const timeEelments=document.querySelectorAll(".currentTime");
+            timeEelments.forEach(element=>element.innerText=time);
+        }
+        setInterval(updateTime,1000);
+        window.onload=updateTime;
+    </script>
+
+</body>
+</html>

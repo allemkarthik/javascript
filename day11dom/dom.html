@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>some content by karthik</h1>
+    <h1>some content by karthik1</h1>
+    <h1>some content by karthik2</h1>
+    <h1>some content by karthik3</h1>
+    <h1>some content by karthik4</h1>
+
+    
+
+    <div class="class1">class content1</div>
+    <div class="class1">class content2</div>
+    <div id="id1">id content1</div>
+    <!-- <div id="id1">id content2</div> -->
+
+
+    <h2>karthik is learing skills</h2>
+    <h2>karthik is learing skills122</h2>
+    <h2>karthik is learing skills2</h2>
+
+
+
+    <h3>static content by html</h3>
+
+    <div>karthik</div>
+
+    
+    
+    <script>
+        // methods
+        // get element by tag name
+
+        let kar=document.getElementsByTagName('h1')
+        console.log(kar[1])
+
+        // get element by class name
+        var a =document.getElementsByClassName('class1')
+        console.log(a)
+        
+
+        // get elememt by id
+        var b=document.getElementById('id1')
+        console.log(b)
+        
+
+        // query selectors by tag name
+        var c=document.querySelector("h1");
+        console.log(c)
+
+        // query selctor by class name
+
+        var d=document.querySelector(".class1")
+        console.log(d)
+
+        // query selector by id
+
+        var e=document.querySelector("#id1")
+        console.log(e)
+        
+
+        // query selector all by tag name
+
+        var f=document.querySelectorAll("h1")
+        console.log(f)
+
+        // query selector all by class name
+
+        var g=document.querySelectorAll(".class1")
+        console.log(g)
+
+        // query selector all by id
+
+        var h=document.querySelectorAll("#id1")
+        console.log(h);
+
+
+        // accessing the text
+
+        let i=document.querySelector('h2').innerText
+        console.log(i);
+
+
+        // accessing the inner html
+
+        let j=document.querySelector('h2').innerHTML
+        console.log(j);
+        
+        
+        // modifying text
+        let k=document.querySelector('h3');
+        k.innerText="text is modified"
+
+        console.log(k);
+        
+
+        // modified div into h1
+
+        let l=document.querySelector('div')
+        l.innerHTML='<h1>'+"sai"+"</h1>"
+
+        console.log(l);
+        
+        // color adding
+
+        
+        
+    </script>
+</body>
+</html>
