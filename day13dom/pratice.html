@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .newdiv{
+            color: red;
+            background-color: orange;
+            font-size: 30px;
+        }
+        .show{
+            display: block;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- attributes -->
+     <!-- how to get attribute  -->
+      <!-- how to set atttribute -->
+      <img src="https://thumbs.dreamstime.com/b/young-conceptual-image-large-stone-shape-human-brain-conceptual-image-large-stone-shape-110748113.jpg" alt="">
+      <div class="firstdiv"></div>
+
+      <div id="kar">karthik is dispalyed</div>
+
+      <button onclick="show()">show content</button>
+      <button onclick="hide()">hide content</button>
+
+
+      <!-- <button ondblclick="fun()">click</button>
+      <button onmouseover="fun()">click</button>
+      <button onmouseout="fun()">click</button>
+      <button onmousemove="fun()">click</button> -->
+
+      <!-- <div></div> -->
+
+    <script>
+        var img2=document.querySelector("img");
+        // console.log(img);
+        console.log(img2.getAttribute("src"));
+        
+        var firstdivv=document.querySelector(".firstdiv");
+        firstdivv.innerHTML="content";
+        firstdivv.style.color="red";
+        firstdivv.style.background="blue";
+        firstdivv.style.fontSize="30px"
+
+
+        // set attribute
+        var newdiv=document.createElement("div");
+        newdiv.innerText="karthik";
+        newdiv.setAttribute("class","newdiv");
+        document.body.append(newdiv)
+
+        // set attribute
+        var newimg=document.createElement("img");
+        newimg.setAttribute("src","https://thumbs.dreamstime.com/b/young-conceptual-image-large-stone-shape-human-brain-conceptual-image-large-stone-shape-110748113.jpg");
+        document.body.append(newimg)
+        console.log(newimg);
+
+        // another waay
+        let newimg1=document.createElement("img");
+        newimg1.src="https://thumbs.dreamstime.com/b/young-conceptual-image-large-stone-shape-human-brain-conceptual-image-large-stone-shape-110748113.jpg"
+        document.body.append(newimg1)
+
+        // create from
+
+        let form=document.createElement("form");
+        form.setAttribute("action","day1.html")
+        document.body.append(form)
+        console.log(form);
+
+        // get from
+        let getfrom=document.querySelector("form");
+        console.log(getfrom.getAttribute("action"));
+        
+
+        // classList add and remove
+
+        let kardiv=document.createElement("div");
+        kardiv.innerHTML="somecontent";
+        kardiv.classList.add("newdiv")
+        kardiv.classList.add("newdiv1")
+        kardiv.classList.add("newdiv23")
+        kardiv.classList.add("newdiv3")
+        kardiv.classList.add("newdiv4")
+        document.body.append(kardiv)
+        console.log(kardiv);
+        
+        kardiv.classList.remove("newdiv")
+
+
+        // 
+
+        var div=document.getElementById("kar");
+        // function hide(){
+        //     div.classList.add("hide");
+        //     div.classList.remove("show")
+        // } 
+
+        // function show(){
+        //     div.classList.add("show")
+        //     div.classList.remove("hide")
+
+        // }
+
+        function hide(){
+            div.classList.toggle("hide")
+        }
+       
+        function show(){
+            div.classList.toggle("show")
+        }
+
+
+        // events
+
+        // function fun(){
+        //     alert("button is clicked")
+        // }
+
+        // buton  addeventlistener
+
+        var btn=document.createElement("button");
+        btn.innerText="click me";
+        btn.addEventListener("click",fun)
+        function fun(){
+            alert("button clicked")
+        }
+
+
+
+        document.body.append(btn)
+
+
+        //arrow 
+        var btn2=document.createElement("button");
+        btn2.innerText="click me2";
+        btn2.addEventListener("click",()=>{alert("button clicked")
+        })
+
+
+
+        document.body.append(btn2)
+        
+
+    </script>
+</body>
+</html>

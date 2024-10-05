@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .dhoni{
+            height: 50vh;
+            width: 50%;
+            border: 1px solid blue; /* Corrected spelling here */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- buttons -->
+
+    <div>
+        <img class="dhoni">
+    </div>
+     <button onclick="fun1()" ondblclick="fun11()">click if you wanna see dhoni</button>
+     <button onclick="fun2()" ondblclick="fun22()">click if you wanna see sir jadeja</button>
+     <button onclick="fun3()" ondblclick="fun22()">click if you wanna see raina</button>
+
+
+
+
+      <!--js--> 
+      <script>
+        function fun1(){
+            var image1=document.getElementsByClassName("dhoni")[0];
+            image1.src="https://static.toiimg.com/thumb/msid-108681057,width-1280,height-720,resizemode-4/108681057.jpg"
+            image1.alt="dhoni"
+            image1.style.display="block"
+            // image1.classList.toggle("dhoni")
+        }
+        function fun11(){
+            var image1=document.getElementsByClassName("dhoni")[0];
+            
+            image1.style.display="none"
+
+
+        }
+
+        function fun2(){
+            var image1=document.getElementsByClassName("dhoni")[0];
+            image1.src="https://static.theprint.in/wp-content/uploads/2022/11/ANI-20221115181412.jpg"
+            image1.alt="royal navgan"
+            image1.style.display="block"
+            // image1.classList.toggle("dhoni")
+        }
+        function fun22(){
+            var image1=document.getElementsByClassName("dhoni")[0];
+            
+            image1.style.display="none"
+
+
+        }
+        function fun3(){
+            var image1=document.getElementsByClassName("dhoni")[0];
+            image1.src="https://m.economictimes.com/thumb/msid-110069566,width-1600,height-900,resizemode-4,imgsize-94398/suresh-raina-and-ms-dhoni.jpg"
+            image1.alt="raina"
+            image1.style.display="block"
+            // image1.classList.toggle("dhoni")
+        }
+        function fun33(){
+            var image1=document.getElementsByClassName("dhoni")[0];
+           
+            image1.style.display="none"
+
+
+        }
+
+
+      </script>
+</body>
+</html>
