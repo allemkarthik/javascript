@@ -4,12 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            gap: 3%;
+        }
+        .parent>div{
+            
+            position: relative;
+        }
+        
+        .child1{
+            position: absolute;
+            background-color: brown;
+            z-index: 20;
+            top: 0;
+            left: 0;
+            padding: 5px;
+            width:10%;
+            text-align: center;
+            
+
+        }
+        .child2{
+            width: 100%;
+            height: 50vh;
+        }
+        
+        h5{
+            color: red;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-   <div class="child"></div> 
+   <!-- <button>click me</button> -->
+    <!-- <form action="">
+        <input type="text" name="" id="inp1">
+        <button type="submit" value="submit">submit</button>
+    </form> -->
+
+
+    <input type="text" name="" id="inp1">
+
+    <button>click</button>
+    <h5>please enter a value</h5>
 
    <script>
-    var 
+    // document.body.addEventListener("keydown",(event)=>{
+    //     console.log(event.key);
+
+    //     if (event.key=="Enter"){
+    //         console.log("form submitted");
+            
+    //     }
+        
+    // })
+
+    // form
+
+    // var form=document.querySelector("form");
+    // form.addEventListener("submit",(event)=>{
+    //     event.preventDefault();
+    //     console.log(event);
+        
+    //     console.log("form submitted");
+        
+    // })
+
+    // input get
+
+    var inp1=document.getElementById("inp1");
+    
+    var button=document.getElementsByTagName("button")[0];
+    button.addEventListener("click",()=>{
+        var hh=document.getElementsByTagName("h5")[0];
+        if(inp1.value==""){
+            
+            hh.style.display="block"
+            
+           
+            
+        }
+        else{
+            hh.style.display="none"
+
+
+        }
+        console.log(inp1.value)
+        inp1.value=""
+
+    })
+
+    
    </script>
 </body>
 </html>

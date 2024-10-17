@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:gray ;
+        }
+        h1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15%;
+
+        }
+        input{
+            text-align: center;
+            padding: 2%;
+            font-size: 1.3rem;
+            margin: 2%;
+            background-color: beige;
+        }
+       
+        .div0{
+            padding: 2%;
+            margin: 2%;
+            font-size: 1.3rem;
+            background-color: bisque;
+
+        }
+        .div1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+
+            
+        }
+        .div2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 2%;
+            
+        
+        }
+        .plus,.minus,.into,.divi{
+            padding: 2%;
+            margin: 2%;
+            font-size: 1.3rem;
+            background-color: blanchedalmond;
+
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>simple calculator</h1>
+    <div class="div1">
+
+        <input type="number" name="" id="inp1" placeholder="enter a first input">
+        <input type="number" name="" id="inp2" placeholder="enter a second input">
+        <button class="div0">=</button>
+        <input type="number" name="" id="inp3" placeholder="result" readonly>
+    </div>
+    <div class="div2">
+        <button class="plus">addition(+)</button>
+        <button class="minus">subtraction(-)</button>
+        <button class="into">multiplication(*)</button>
+        <button class="divi">division(/)</button>
+
+    </div>
+    <!-- <button>=</button> -->
+
+    <script>
+        var inp1=document.getElementById("inp1")
+        var inp2=document.getElementById("inp2")
+        var inp3=document.getElementById("inp3")
+
+        var btn1=document.getElementsByTagName("button")[1]
+        var btn2=document.getElementsByTagName("button")[2]
+        var btn3=document.getElementsByTagName("button")[3]
+        var btn4=document.getElementsByTagName("button")[4]
+
+        btn1.addEventListener("click",()=>{
+            inp3.value=parseFloat(inp1.value)+parseFloat(inp2.value);
+            
+            
+        })
+        btn2.addEventListener("click",()=>{
+            inp3.value=parseFloat(inp1.value)-parseFloat(inp2.value);
+            
+        })
+        btn3.addEventListener("click",()=>{
+            inp3.value=parseFloat(inp1.value)*parseFloat(inp2.value);
+            
+        })
+        btn4.addEventListener("click",()=>{
+           var divisor=parseFloat(inp2.value);
+
+           if(divisor!==0){
+            
+               inp3.value=parseFloat(inp1.value)/parseFloat(inp2.value);
+           }
+           else{
+            inp3.value="error:divison by zero";
+           }
+           
+        });
+         
+        
+    </script>
+</body>
+</html>

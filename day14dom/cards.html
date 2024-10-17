@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            gap: 3%;
+        }
+        .parent>div{
+            
+            position: relative;
+        }
+        
+        .child1{
+            position: absolute;
+            background-color: brown;
+            z-index: 20;
+            top: 0;
+            left: 0;
+            padding: 1%;
+            width:20%;
+            text-align: center;
+            
+
+        }
+        .child2{
+            width: 100%;
+            height: 40vh;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="parent"></div> 
+
+   <script>
+
+    var imgcon=["dhoni","virat","jadeja","raina","ruturaj","rohit","dhoni","virat","jadeja","raina","ruturaj","rohit"]
+    var images=["download.jpeg","virat-kohli-pictures-yc8dfpcjssp3s4se.jpg","jad.jpg","suresh-raina2.jpg","Dhoni-and-Ruturaj.webp","rohit.jpg","download.jpeg","virat-kohli-pictures-yc8dfpcjssp3s4se.jpg","jad.jpg","suresh-raina2.jpg","Dhoni-and-Ruturaj.webp","rohit.jpg"]
+    var parent=document.querySelector(".parent")
+    
+
+    for(i=0;i<imgcon.length;i++){
+        var child=document.createElement("div")
+        var child1=document.createElement("div")
+        var child2=document.createElement("img")
+        child1.setAttribute("class","child1")
+        child2.setAttribute("class","child2")
+        
+        child1.innerText=imgcon[i];
+        child2.src=images[i];
+        
+
+        
+        child.append(child1,child2)
+        parent.appendChild(child)
+        document.body.append(parent)
+
+
+    }
+
+
+    
+   </script>
+</body>
+</html>
