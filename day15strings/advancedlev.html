@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("enter a user name:")
+        function user(a){
+            if(a==""){
+                console.log("please enter your username");
+            }
+            else if(a.length<=5){
+                console.log("your user name too short, invalid");
+            }
+            else if(a.length>=5 && a.length<=10){
+                console.log("user name is medium, invalid");
+                
+            }
+            else if(a.length>=10){
+                console.log("username is valid, ready to go");
+                
+            }
+
+        }
+        user(a)
+    </script>
+</body>
+</html>

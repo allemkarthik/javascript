@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstname=prompt("enter your name for email:")
+        var lastname=prompt("enter your last name for email")
+        function emil(){
+            if(firstname.length=="" && lastname.length==""){
+                console.log("please enter your first name and last name");
+                
+            }
+            else if(firstname==lastname){
+                console.log("first name and last name should not be the same");
+                
+            }
+            else{
+                console.log(firstname.concat(lastname)+"@gmail.com");
+                
+            }
+
+        }
+        emil()
+    </script>
+</body>
+</html>
