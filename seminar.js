@@ -1,47 +1,30 @@
-// // check whether given stirg is vowel or not
+// preiovos prime
 
-// function find(word){
+// let num=11
+// c=0
+// while(c==0){
+//     num=num-1 //153  //9  9
+//     fact=0
+//     for(i=2;i<num;i++){ // 2  
+//         if(num%i==0){
+//             fact++
 
-//     vowels=['a','e','i','o','u']
-//     givenstr=false;
-//     for (i=0;i<=word.length;i++){
-//         if (vowels.includes(word[i])){
-//             givenstr=true
-//             break;
-            
-//         }
+//         } 
 //     }
-//     if(givenstr==true){
-//         console.log("vowel")
+//     if(fact==0){
+//         console.log(num,"is prev prime");
+//         c++
+        
+        
 //     }
-//     else{
-//         console.log("consonent")
-//     }
+
 // }
-// find("k")
 
+// range of prime number between 1 to 100
 
-// karthik is study 
-// karthik got skils
-// karthik got job
-// karthik got married
-
-function study(a){
-    console.log("karthik is studying");
-    a(job)
+// function createHelloWorld(n){
+//     console.log(n);
     
-}
 
-function married(){
-    console.log("kar got married")
-}
-function skill(b){
-    console.log("kar got skills")
-    b(married)
-}
-function job(c){
-    console.log("kar got job")
-    c()
-}
-
-study(skill)
+// }
+// createHelloWorld("hello world")

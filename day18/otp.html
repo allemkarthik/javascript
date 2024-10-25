@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        background-image: url("./low-poly-style-zero-one-binary-digit-tech-background_1017-52413.avif");
+        background-size: cover;
+        background-attachment: fixed;
+        align-items: center;
+      }
+      .main-div {
+        background-color: color-mix(in srgb-linear, white 20%, black 10%);
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .subdiv {
+        /* border: 1px solid red; */
+        width: 80%;
+        height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .subdiv2 {
+        display: flex;
+        flex-direction: row;
+        height: 15vh;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+      }
+      .subdiv3 {
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+      }
+
+      #inp1 {
+        padding: 2%;
+        border-radius: 10px;
+      }
+      .button {
+        padding: 2%;
+        border-radius: 10px;
+        width: 20%;
+      }
+      .btn2 {
+        padding: 0.5%;
+        margin: 0.5%;
+        border-radius: 10px;
+      }
+      h2 {
+        text-align: center;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <h2>OTP GENERATOR</h2>
+      <div class="subdiv">
+        <div class="subdiv2">
+          <label for="" id="inp1" class="optdisplay">otp displayed:</label>
+          <input type="number" name="" id="inp1" />
+          <button class="btn2">generate otp</button>
+          <label for="" id="inp1">enter otp:</label>
+          <input type="number" name="" id="inp1" class="optenter" />
+        </div>
+        <div class="subdiv3">
+          <button class="button">submit</button>
+        </div>
+        <h2></h2>
+      </div>
+    </div>
+    <script>
+      var inp1 = document.getElementsByTagName("input")[0];
+      var inp2 = document.getElementsByTagName("input")[1];
+      
+      var btn2 = document.getElementsByTagName("button")[0];
+      var btn = document.getElementsByTagName("button")[1];
+      var h3 = document.getElementsByTagName("h2")[1];
+      btn2.addEventListener("click", () => {
+        var opt = Math.floor(Math.random() * 9000) + 1000;
+        inp1.value = opt;
+      });
+
+      btn.addEventListener("click", () => {
+        if (inp1.value=="" && inp2.value=="") {
+          h3.innerText = "Please enter the otp";
+        } else if (inp1.value == inp2.value) {
+          h3.innerText = "opt matched suceesfully✔️";
+        } else {
+          h3.innerText = "opt not matched❌";
+        }
+        inp2.value = "";
+      });
+    </script>
+  </body>
+</html>
